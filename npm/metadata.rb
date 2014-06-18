@@ -1,5 +1,5 @@
 name             'npm'
-maintainer       'Bogdan Rădulescu'
+maintainer       'Bogdan Radulescu'
 maintainer_email 'bogdan@nimblex.net'
 license          'All rights reserved'
 description      'Configures npm'

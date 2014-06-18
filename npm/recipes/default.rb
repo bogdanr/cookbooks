@@ -2,7 +2,7 @@
 # Cookbook Name:: npm
 # Recipe:: default
 #
-# Copyright 2014, Bogdan Rădulescu
+# Copyright 2014, Bogdan Radulescu
 #
 
 template 'npmrc' do

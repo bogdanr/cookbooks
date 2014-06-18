@@ -88,4 +88,4 @@ Contributing
 License and Authors
 -------------------
 Authors:
-Bogdan Rădulescu
+Bogdan Radulescu
