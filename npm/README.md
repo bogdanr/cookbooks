@@ -27,6 +27,12 @@ Attributes
     <td><tt>root</tt></td>
   </tr>
   <tr>
+    <td><tt>['npm']['rc_mode']</tt></td>
+    <td>String</td>
+    <td>The mode for the config file</td>
+    <td><tt>660</tt></td>
+  </tr>
+  <tr>
     <td><tt>['npm']['auth']</tt></td>
     <td>String</td>
     <td>Hashed password</td>
@@ -83,6 +89,7 @@ Just include `npm` in your node's `run_list`:
   }
 }
 ```
+Note: Currently OpsWorks runs this before adding the apache group so untill we find a better way we can have `rc_group as root` and `rc_mode as 666`
 
 Contributing
 ------------

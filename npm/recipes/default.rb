@@ -10,5 +10,5 @@ template 'npmrc' do
   source "npmrc.erb"
   group node[:npm][:rc_group]
   owner "root"
-  mode "0660"
+  mode node[:npm][:rc_mode]
 end

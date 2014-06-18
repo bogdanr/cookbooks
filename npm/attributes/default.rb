@@ -6,6 +6,7 @@ when 'debian','ubuntu'
 end
 
 default[:npm][:rc_group] = 'root'
+default[:npm][:rc_mode] = 660
 default[:npm][:auth] = 'YourHashGoesHere'
 default[:npm][:registry] = 'https://registry.npmjs.org'
 default[:npm][:email] = 'root'
