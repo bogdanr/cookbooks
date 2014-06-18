@@ -3,14 +3,6 @@ npm Cookbook
 
 This cookbook configures NPM's settings such as the default registry and authentication credentials to it.
 
-Requirements
-------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
-
-e.g.
-#### packages
-- `toaster` - npm needs toaster to brown your bagel.
-
 Attributes
 ----------
 
@@ -63,9 +55,7 @@ Attributes
 Usage
 -----
 #### npm::default
-TODO: Write usage instructions for each cookbook.
 
-e.g.
 Just include `npm` in your node's `run_list`:
 
 ```json
@@ -74,6 +64,23 @@ Just include `npm` in your node's `run_list`:
   "run_list": [
     "recipe[npm]"
   ]
+}
+```
+
+**For OpsWorks**:
+
+- Include this at the Setup lifecycle event as `npm::default`.
+- Overwrite the defaults with custom JSON such as:
+
+```json
+{
+  "npm" : {
+    "registry" : "http://50.80.70.40:4873",
+    "auth" : "ZWRt1W46QnpGbWozYlh4MHm=",
+    "email" : "bogdan@nimblex.net",
+    "always_auth" : true,
+    "rc_group" : "apache"
+  }
 }
 ```
 
